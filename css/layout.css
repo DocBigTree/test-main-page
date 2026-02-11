@@ -55,6 +55,22 @@ section {
     }
 }
 
+/* Light mode adjustments for hero */
+[data-theme="light"] .hero {
+    background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFB 100%);
+}
+
+[data-theme="light"] .hero-background {
+    opacity: 0.05;
+}
+
+[data-theme="light"] .hero-title {
+    background: linear-gradient(135deg, #1A202C 0%, #00B88A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .hero-content {
     position: relative;
     z-index: var(--z-base);

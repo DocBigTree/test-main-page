@@ -1,6 +1,6 @@
 /* CSS Custom Properties - Design System */
 :root {
-    /* Colors - Computational Precision Palette */
+    /* Dark Mode Colors (Default) */
     --color-bg-primary: #0A1628;
     --color-bg-secondary: #0F1F35;
     --color-bg-tertiary: #152840;
@@ -108,4 +108,32 @@
 
         --container-padding: var(--space-md);
     }
+}
+
+/* Light Mode Colors */
+[data-theme="light"] {
+    --color-bg-primary: #FFFFFF;
+    --color-bg-secondary: #F8FAFB;
+    --color-bg-tertiary: #EDF2F7;
+
+    --color-accent: #00B88A;
+    --color-accent-hover: #00D9A3;
+    --color-accent-dark: #009973;
+
+    --color-text-primary: #1A202C;
+    --color-text-secondary: #4A5568;
+    --color-text-tertiary: #718096;
+
+    --color-border: #E2E8F0;
+    --color-border-hover: #CBD5E0;
+
+    --color-error: #E53E3E;
+    --color-success: #00B88A;
+    --color-warning: #DD6B20;
+
+    /* Adjust shadows for light mode */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
